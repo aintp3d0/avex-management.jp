@@ -15,7 +15,16 @@ def artists():
     artists_ = base.avex_artist()
     for artist in artists_[6:]:
         soup = base._get_soup(artist)
-        title = "{} | {}".format(soup.find('h1').text, soup.find('a', 'cat_name').text)
+        h1 = soup.find('h1')
+        cat_name = soup.find('a', 'cat_name')
+        title = []
+        if h1:
+            title.append(h1.text)
+        if cat_name:
+            title.append(cat_name.text)
+        if not title:
+            continue
+        title = " | ".join(title)
         links = soup.find_all("div", "article_item artist_link")
         if links:
             m = eqmp(title, False)

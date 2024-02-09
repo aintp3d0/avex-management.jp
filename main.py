@@ -26,7 +26,7 @@ def main():
     print("""
 1: Avex-Management News
 2: Avex-Management Artists
-3: Avex-Management Movies
+3: Avex-Management Movies   [deprecated]
     """)
     que = input("?: ")
     if que:
@@ -35,8 +35,8 @@ def main():
             news(limit)
         elif que == "2":
             artists()
-        elif que == "3":
-            movie()
+        # elif que == "3":
+        #     movie()
 
 
 if __name__ == "__main__":
