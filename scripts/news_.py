@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-# __author__ = 'kira@-築城院 真鍳'
-
-from .base_ import base #-----#
-from .eqmp_ import eqmp, excp #
+from .base_ import base
+from .eqmp_ import eqmp, excp
 
 
 def news(stop_page):

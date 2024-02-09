@@ -1,11 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-# __author__ = 'kira@-築城院 真鍳'
-
-import re #-------------------------#
-from requests import get # ---------#
-from bs4 import BeautifulSoup as bs #
+import re
+from requests import get
+from bs4 import BeautifulSoup as bs
 
 
 class NotTrueUrl(Exception):

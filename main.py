@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-# __author__ = 'kira@-築城院 真鍳'
+# __author__ = 'ames0k0'
 
-from scripts.news_ import news #-----#
-from scripts.movie_ import movie #---#
-from scripts.artists_ import artists #
+from scripts.news_ import news
+from scripts.movie_ import movie
+from scripts.artists_ import artists
 
 
 def _add_limit(name, pages):
